@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeesComponent } from './components/employees/add-employees/add-employees.component';
+import { EditEmployeeComponent } from './components/employees/edit-employee/edit-employee.component';
 import { EmployeesListComponent } from './components/employees/employees-list/employees-list.component';
 'employees-FileList.component';
 AddEmployeesComponent
@@ -16,6 +17,10 @@ const routes: Routes = [
    {
     path: 'employees/add',
     component: AddEmployeesComponent
+   },
+   {
+    path: 'employees/edit/:id',
+    component: EditEmployeeComponent
    }
 ];
  
